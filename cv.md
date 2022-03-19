@@ -19,10 +19,13 @@ I've been worked in IT industry since 2010 as IT Technician/Support Engineer. I 
 * WEBPACK 5
 * REACT, REACT-REDUX
 * Bootstrap
+
 ## Education
 * Humanitarian Institute (Nizhniy Novgorod branch) 2007 - 2013, Faculty of Information Technology, Specialization: Informatics-economist
+
 ## Trainings
 * Nizhny Novgorod State University N.I. Lobachevsky, JavaScript - Advanced, 2019
+
 ## Languages
 * Russian - Native
 * English - B1  Intermediate (According to the online test at EFset. [Certificate](https://www.efset.org/cert/GKMBE2))
