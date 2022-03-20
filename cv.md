@@ -21,6 +21,48 @@ I've been worked in IT industry since 2010 as IT Technician/Support Engineer. I 
 * REACT, REACT-REDUX
 * Bootstrap
 
+## Code examples
+**Using closures to share class state**: In object-oriented programming, it is sometimes useful to have private shared state among all instances of a class; in other languages, like ruby, this shared state would be tracked with a class variable. In javascript we achieve this through closures and immediately-invoked function expressions.
+In this kata, I want you to write make a Cat constructor that takes arguments name and weight to instantiate a new cat object. The constructor should also have an averageWeight method that returns the average weight of cats created with the constructor.
+```
+const Cat = (function () {
+  let countOfinstances = 0;
+  let summWeight = 0
+  
+  function countInstances(){
+    countOfinstances++
+  }
+
+  function catConstructor(name, weight){
+    if(!name || !weight){
+      throw new Error('No name or weight');
+    }
+    this.name = name;
+    this._weight = weight
+    Object.defineProperty(this, 'weight', {
+      get: function(){
+        return this._weight
+      },
+      set: function(value){
+        summWeight -= this._weight
+        this._weight = value
+        summWeight+=this._weight
+      }
+    })
+    countInstances()
+    summWeight+=this._weight
+  }
+
+  catConstructor.averageWeight = function(){
+        return summWeight/countOfinstances
+    }
+  return catConstructor
+  
+}());
+```
+* https://github.com/evkondr/assets-center
+* https://github.com/evkondr/CYBERCHAT
+
 ## Education
 * Humanitarian Institute (Nizhniy Novgorod branch) 2007 - 2013, Faculty of Information Technology, Specialization: Informatics-economist
 
