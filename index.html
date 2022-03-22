@@ -4,9 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Evgeniy Kondratiev. CV</title>
+    <script src="https://use.fontawesome.com/59577e2270.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    
+<!-- Used BEM method -->
+<body id="top">
+    <main class="wrap">
+        <!-- Nav block -->
+        <nav class="top-nav">
+            <div class="humburger">
+                <span class="humburger__line"></span>
+            </div>
+            <ul class="nav-list nav-list-top">
+                <li class="nav-list__element"><a class="nav-list__link" href="#contact">Contact information</a></li>
+                <li class="nav-list__element"><a class="nav-list__link" href="#about">About Me</a></li>
+                <li class="nav-list__element"><a class="nav-list__link" href="#skills">Basic skills</a></li>
+                <li class="nav-list__element"><a class="nav-list__link" href="#code">Code examples</a></li>
+                <li class="nav-list__element"><a class="nav-list__link" href="#education">Education</a></li>
+                <li class="nav-list__element"><a class="nav-list__link" href="#trainings">Trainings</a></li>
+                <li class="nav-list__element"><a class="nav-list__link" href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+        <!-- Header block -->
+        <header class="header section">
+            <div class="avatar">
+                <img class="avatar_img" src="./images/avatar.jpg" alt="avatar">
+            </div>
+            <div class="header-disc">
+                <h1>Evgeniy Kondratiev</h1>
+                <h2>Junior Web Developer</h2>
+            </div>
+        </header>
+        <!-- Contact info block -->
+        <section class="section" id="contact">
+            <h3 class="section-header">Contact information</h3>
+            <ul class="section-list">
+                <li class="section-list__element"><b>Address:</b> Russia, Nizhniy Novgorod</li>
+                <li class="section-list__element"><b>Phone:</b><a class="section-link" href="tel:+79092952512">+7 909 295 25 12</a></li>
+                <li class="section-list__element"><b>Email:</b><a class="section-link" href="mailto:">kondratiev.evg@gmail.com</a></li>
+                <li class="section-list__element">
+                    <b>Social:</b><a class="section-link" href="https://vk.com/id4342230"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    <a class="section-link" href="https://www.instagram.com/evgeniy_kondratyev?r=nametag "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li> 
+            </ul>
+        </section>
+        <!-- About me block -->
+        <section class="section" id="about">
+            <h3 class="section-header">About Me</h3>
+            <ul class="section-list">
+                <li class="section-list__element"><b>Date of birth:</b>26 January 1990</li>
+                <li class="section-list__element"><b>Marital status:</b>Single</li>
+            </ul>
+            <p>I’ve been worked in IT industry since 2010 as IT Technician/Support Engineer.
+                I have started learn coding and Frontend technologies since 2019 mostly by self education - read
+                books, manuals, watched educational videos. Professional Web Developer - this is the main of my
+                goals for next few years. I study and practise every day to achieve my goals.
+                I consider myself well motivated and purposeful because I know that:
+                <q>The best way to predict the future is to create it. - Abraham Lincoln</q>  
+            </p>
+        </section>
+        <!-- Basik skills block -->
+        <section class="section" id="skills">
+            <h3 class="section-header">Basic skills</h3>
+            <ul class="section-list">
+                <li class="section-list__element">HTML5</li>
+                <li class="section-list__element">CSS3</li>
+                <li class="section-list__element">SASS</li>
+                <li class="section-list__element">JavaScript</li>
+                <li class="section-list__element">REACT, REACT-REDUX</li>
+                <li class="section-list__element">Bootstrap</li>
+            </ul>
+        </section>
+        <!-- Code examples block -->
+        <section class="section" id="code">
+            <h3 class="section-header">Code examples</h3>
+            <ul class="section-list">
+                <li class="section-list__element"><a class="section-link" href="https://github.com/evkondr/assets-center">https://github.com/evkondr/assets-center</a></li>
+                <li class="section-list__element"><a class="section-link" href="https://github.com/evkondr/CYBERCHAT">https://github.com/evkondr/CYBERCHAT</a></li>
+            </ul>
+        </section>
+        <!-- Education block -->
+        <section class="section" id="education">
+            <h3 class="section-header">Education</h3>
+            <ul class="section-list">
+                <li class="section-list__element">Humanitarian Institute (Nizhniy Novgorod branch) 2007 - 2013, Faculty of Information Technology, Specialization: Informatics-economist</li>
+            </ul>
+        </section>
+        <!-- Trainings block -->
+        <section class="section" id="trainings">
+            <h3 class="section-header">Trainings</h3>
+            <ul class="section-list">
+                <li class="section-list__element">Nizhny Novgorod State University N.I. Lobachevsky, JavaScript - Advanced, 2019</li>
+            </ul>
+        </section>
+        <!-- Languages block -->
+        <section class="section" id="languages">
+            <h3 class="section-header">Languages</h3>
+            <ul class="section-list">
+                <li class="section-list__element">Russian - Native</li>
+                <li class="section-list__element">English - B1 Intermediate (According to the online test at a EFset. <a class="section-link" href="https://www.efset.org/cert/GKMBE2">Certificate</a>)</li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <div class="footer-links">
+                <div class="footer-links">
+                    <a class="section-link section-link__git" href="https://github.com/evkondr"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+                <div class="footer-links-rs-school">
+                    <img class="footer-links__rs-school-logo" src="https://rs.school/images/rs_school_js.svg" alt="evkondr">
+                    <div><a class="section-link" href="">courses</a></div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list__element footer-nav__element"><a class="nav-list__link footer-nav__link" href="#top">UP</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
 </body>
 </html>
