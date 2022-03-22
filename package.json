@@ -1,0 +1,23 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "rsschool-cv-html task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evkondr/rsschool-cv.git"
+  },
+  "author": "kondratiev.evg@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evkondr/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/evkondr/rsschool-cv#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2"
+  }
+}
