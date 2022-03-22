@@ -4,7 +4,7 @@
   "description": "rsschool-cv-html task",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp serve"
   },
   "repository": {
     "type": "git",
