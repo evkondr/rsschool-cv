@@ -7,6 +7,8 @@
     <title>Evgeniy Kondratiev. CV</title>
     <script src="https://use.fontawesome.com/59577e2270.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <!-- Used BEM method -->
@@ -80,6 +82,51 @@
         <!-- Code examples block -->
         <section class="section" id="code">
             <h3 class="section-header">Code examples</h3>
+            <div class="section-code">
+                <p>
+                    <h5 class="section-code_header">Codewars task</h5>
+                    <b>Using closures to share class state:</b> In object-oriented programming, it is sometimes useful to have private shared state among all instances of a class; in other languages, like ruby, this shared state would be tracked with a class variable. In javascript we achieve this through closures and immediately-invoked function expressions.
+In this kata, I want you to write make a Cat constructor that takes arguments name and weight to instantiate a new cat object. The constructor should also have an averageWeight method that returns the average weight of cats created with the constructor.
+                </p>
+                <pre>
+                    <code class="section-code_example">
+                        const Cat = (function () {
+                            let countOfinstances = 0;
+                            let summWeight = 0
+                            
+                            function countInstances(){
+                              countOfinstances++
+                            }
+                          
+                            function catConstructor(name, weight){
+                              if(!name || !weight){
+                                throw new Error('No name or weight');
+                              }
+                              this.name = name;
+                              this._weight = weight
+                              Object.defineProperty(this, 'weight', {
+                                get: function(){
+                                  return this._weight
+                                },
+                                set: function(value){
+                                  summWeight -= this._weight
+                                  this._weight = value
+                                  summWeight+=this._weight
+                                }
+                              })
+                              countInstances()
+                              summWeight+=this._weight
+                            }
+                          
+                            catConstructor.averageWeight = function(){
+                                  return summWeight/countOfinstances
+                              }
+                            return catConstructor
+                            
+                          }());
+                    </code>
+                </pre>
+            </div>
             <ul class="section-list">
                 <li class="section-list__element"><a class="section-link" href="https://github.com/evkondr/assets-center">https://github.com/evkondr/assets-center</a></li>
                 <li class="section-list__element"><a class="section-link" href="https://github.com/evkondr/CYBERCHAT">https://github.com/evkondr/CYBERCHAT</a></li>
@@ -124,6 +171,8 @@
             </nav>
         </footer>
     </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
